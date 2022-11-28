@@ -1,0 +1,47 @@
+:root{
+    --s_color_1: linear-gradient(45deg, red, blue);
+    --s_color_2: linear-gradient(45deg, #8f6B29, #FDE08D, #DF9F28);
+    --sc1: var(--s_color_1);
+    --sc2: var(--s_color_2);
+    --background: var(--s_color_1);
+}
+
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, purple, red, blue);
+}
+.main{
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+.basis{
+    display: flex;
+    height: 21vh;
+    background-color: rgb(199, 115, 195);
+    font-size: 6vh;
+    font-family: 'Permanent Marker', cursive;
+    justify-content: center;
+    align-items: center;
+}
+.basis:hover{
+    background-color: rgba(255, 35, 244, 0.8);
+    cursor: pointer;
+}
